@@ -1,6 +1,12 @@
+html, body, #app{
+    height: 100%;
+}
 .app-style{
+    height: 100%;
+
     display: flex;
     justify-content: space-between;
+
 }
 
 .editor{
@@ -15,14 +21,14 @@
     resize: none;
     font-size: 20px;
 
-    background-color: #ffffff;
+    background-color:#9AECDB;
 
     width: 50%;
     height: 100%;
 }
 
 .preview{
-    background-color: #000000;
+    background-color: #58B19F;
     color:white;
 
     width: 50%;
