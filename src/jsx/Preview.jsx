@@ -7,7 +7,7 @@ const Preview = ({inputValue}) => {
     const html = writer.render(reader.parse(inputValue));
 
     return(
-        <div class="preview" 
+        <div className="preview" 
              dangerouslySetInnerHTML={{__html: html}}>
         </div>
     );
