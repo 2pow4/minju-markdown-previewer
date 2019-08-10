@@ -3,10 +3,11 @@ const Editor = require('./Editor.jsx')
 const Preview = require('./Preview.jsx')
 
 class App extends React.Component {
+  
   constructor(props){
     super(props)
     this.state = {
-    editor: ""
+      editor: ""
     }
   }
 
@@ -16,12 +17,13 @@ class App extends React.Component {
   
   render() {
     return (
-      <div class={this.props.className}>
+      <div className={this.props.className}>
         <Editor 
             value={this.state.editor}
             onInputChange={(e)=> this.EditorInputHandler(e)}
         />
-        <Preview
+        <Preview 
+
             inputValue={this.state.editor} 
         />
       </div>  
